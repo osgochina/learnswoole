@@ -20,6 +20,6 @@ for ($n = 1; $n <= 3; $n++) {
 swoole_set_process_name("master process");
 foreach ($table as $key=>$val)
 {
-    echo $key."=>".$val['data']."\n";
+    echo "master: pid=".$key.",data=".$val['data']."\n";
 }
 sleep(60);
